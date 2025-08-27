@@ -33,8 +33,8 @@ def upload_excel(file: UploadFile = File(...), query: str = Form("")):
     logger.info(f"File uploaded: {target_file}, Query: {query}")
     
     try:
-        from main import main_function
-        result = main_function(query)
+        from services.main_flow import main_flow
+        result = main_flow(query)
         logger.info("Main function executed successfully")
         
         response_data = {"file_path": str(target_file)}

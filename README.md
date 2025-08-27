@@ -49,7 +49,7 @@
 ## Usage
 **Run this command in your terminal**
 ```bash
-python api.py
+python main.py
 ```
 
 The agent will start an interactive session where you can ask questions and request analysis about your excel file.
